@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  iOSDemo_All_In_One
+//
+//  Created by luochenxun on 15/5/23.
+//  Copyright (c) 2015年 kacha-mobile. All rights reserved.
+//
+
+#ifndef iOSDemo_All_In_One_PrefixHeader_pch
+#define iOSDemo_All_In_One_PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+// Debug or not
+#define IS_DEBUG 1
+
+/* ------------  Common Macros Header  ------------- */
+#pragma mark - Common Macros Header
+
+#import "ProgramDesignHeader.h"
+#import "DeviceInfo.h"
+
+/* ------------  Categorys  ------------- */
+#pragma mark - Categorys
+
+#import "NSObject+ScreenUtil.h"
+
+
+/* ------------  Custom utils  ------------- */
+#pragma mark - Custom utils
+
+#import "CommonUtils.h"
+
+#endif

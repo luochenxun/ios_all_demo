@@ -1,0 +1,19 @@
+digraph G {
+	node [shape=box];
+	"DemoFactory" -> "SimpleUIViewDemo";
+	"DemoFactory" -> "NinepatchStretchDemo";
+	"DemoFactory" -> "DemoModel";
+	"DemoFactory" -> "ContentModeDemo";
+	"DemoFactory" -> "TileImageDemo";
+	"DemoTableViewController" -> "DemoFactory";
+	"DemoTableViewController" -> "DemoModel";
+	"DemoModel" -> {};
+	
+	
+	edge [color=blue, dir=both];
+	"ContentModeDemo" [color=gray, style=dashed, fontcolor=gray]
+	"SimpleUIViewDemo" [color=gray, style=dashed, fontcolor=gray]
+	"TileImageDemo" [color=gray, style=dashed, fontcolor=gray]
+	"NinepatchStretchDemo" [color=gray, style=dashed, fontcolor=gray]
+}
+
